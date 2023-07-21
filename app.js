@@ -1,22 +1,29 @@
-const express = require("express");
+import express from "express";
+import { engine } from "express-handlebars";
+import mongoose from "mongoose";
 
 const app = express();
 
-// Middleware
-app.use((req, res, next) => {
-  console.log("Current time: " + Date.now());
-  req.parameter = "Test";
-  next();
-});
+// Connect to mongoose
+const dbURI = `mongodb://127.0.0.1:27017/vidjot-dev`;
+mongoose
+  .connect(dbURI)
+  .then(() => {
+    console.log("MongoDB Connected ");
+  })
+  .catch((err) => console.log(err));
 
-// Index route
+app.engine("handlebars", engine());
+app.set("view engine", "handlebars");
+app.set("views", "./views");
+
 app.get("/", (req, res) => {
-  console.log(req.parameter);
-  res.send("Home Page");
+  const title = "Welcome";
+  res.render("home", { title: title });
 });
 
 app.get("/about", (req, res) => {
-  res.send("About Page");
+  res.render("about");
 });
 
 // Start server
