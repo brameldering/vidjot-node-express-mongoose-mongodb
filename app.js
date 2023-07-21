@@ -1,6 +1,7 @@
 import express from "express";
 import { engine } from "express-handlebars";
 import mongoose from "mongoose";
+import IdeaModel from "./models/Idea.js";
 
 const app = express();
 
@@ -12,6 +13,8 @@ mongoose
     console.log("MongoDB Connected ");
   })
   .catch((err) => console.log(err));
+
+// Load IdeaModel
 
 app.engine("handlebars", engine());
 app.set("view engine", "handlebars");
