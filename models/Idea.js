@@ -1,4 +1,4 @@
-import mongoose, { trusted } from "mongoose";
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 // create schema
@@ -14,6 +14,4 @@ const IdeaSchema = new Schema({
   date: { type: Date, default: Date.now() },
 });
 
-const IdeaModel = mongoose.model("ideas", IdeaSchema);
-
-export default IdeaModel;
+module.exports = mongoose.model("ideas", IdeaSchema);
