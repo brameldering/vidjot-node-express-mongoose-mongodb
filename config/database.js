@@ -1,4 +1,4 @@
-const logger = require("../helpers/logger.js");
+const { logger } = require("../helpers/logger.js");
 
 require("dotenv").config();
 

@@ -1,136 +1,18 @@
-{"level":"info","message":"before passport.use","service":"user-service"}
-{"level":"info","message":"dev","service":"user-service"}
-{"level":"info","message":"Server started on port 5000","service":"user-service"}
-{"level":"info","message":"MongoDB Connected ","service":"user-service"}
-{"level":"info","message":"before passport.use","service":"user-service"}
-{"level":"info","message":"dev","service":"user-service"}
-{"level":"info","message":"Server started on port 5000","service":"user-service"}
-{"level":"info","message":"MongoDB Connected ","service":"user-service"}
-{"level":"info","message":"before passport.use","service":"user-service"}
-{"level":"info","message":"dev","service":"user-service"}
-{"level":"info","message":"Server started on port 5000","service":"user-service"}
-{"level":"info","message":"MongoDB Connected ","service":"user-service"}
-{"level":"info","message":"before passport.use","service":"user-service"}
-{"level":"info","message":"dev","service":"user-service"}
-{"level":"info","message":"Server started on port 5000","service":"user-service"}
-{"level":"info","message":"MongoDB Connected ","service":"user-service"}
-{"level":"info","message":"before passport.use","service":"user-service"}
-{"level":"info","message":"dev","service":"user-service"}
-{"level":"info","message":"Server started on port 5000","service":"user-service"}
-{"level":"info","message":"MongoDB Connected ","service":"user-service"}
-{"level":"info","message":"before passport.use","service":"user-service"}
-{"level":"info","message":"dev","service":"user-service"}
-{"level":"info","message":"Server started on port 5000","service":"user-service"}
-{"level":"info","message":"MongoDB Connected ","service":"user-service"}
-{"level":"info","message":"before passport.use","service":"user-service","timestamp":"2023-07-25T14:14:40.168Z"}
-{"level":"info","message":"dev","service":"user-service","timestamp":"2023-07-25T14:14:40.174Z"}
-{"level":"info","message":"Server started on port 5000","service":"user-service","timestamp":"2023-07-25T14:14:40.194Z"}
-{"level":"info","message":"MongoDB Connected ","service":"user-service","timestamp":"2023-07-25T14:14:40.208Z"}
-{"level":"info","message":"before passport.use","service":"user-service","timestamp":"2023-07-25T14:14:41.574Z"}
-{"level":"info","message":"dev","service":"user-service","timestamp":"2023-07-25T14:14:41.580Z"}
-{"level":"info","message":"Server started on port 5000","service":"user-service","timestamp":"2023-07-25T14:14:41.597Z"}
-{"level":"info","message":"MongoDB Connected ","service":"user-service","timestamp":"2023-07-25T14:14:41.610Z"}
-{"level":"info","message":"before passport.use","service":"user-service","timestamp":"2023-07-25T14:15:29.773Z"}
-{"level":"info","message":"dev","service":"user-service","timestamp":"2023-07-25T14:15:29.780Z"}
-{"level":"info","message":"Server started on port 5000","service":"user-service","timestamp":"2023-07-25T14:15:29.799Z"}
-{"level":"info","message":"MongoDB Connected ","service":"user-service","timestamp":"2023-07-25T14:15:29.813Z"}
-{"level":"error","message":"Caught exception: TypeError: Cannot read properties of undefined (reading 'module')","service":"user-service","timestamp":"2023-07-25T14:15:54.443Z"}
-{"level":"error","message":"Caught exception: TypeError: Cannot set properties of undefined (setting 'exports')","service":"user-service","timestamp":"2023-07-25T14:16:10.868Z"}
-{
-  message: "Caught exception: TypeError: Cannot set properties of undefined (setting 'exports')",
-  level: 'error',
-  service: 'user-service',
-  timestamp: '2023-07-25T14:22:28.637Z'
-}
-{
-  message: "Caught exception: TypeError: Cannot set properties of undefined (setting 'exports')",
-  level: 'error',
-  service: 'user-service',
-  timestamp: '2023-07-25T14:22:41.126Z'
-}
-{
-  message: "Caught exception: TypeError: Cannot set properties of undefined (setting 'exports')",
-  level: 'error',
-  service: 'user-service',
-  timestamp: '2023-07-25T14:29:10.825Z'
-}
-{
-  message: "Caught exception: TypeError: Cannot set properties of undefined (setting 'exports')",
-  level: 'error',
-  service: 'user-service',
-  timestamp: '2023-07-25T14:31:04.314Z'
-}
-{"level":"error","message":"Caught exception: TypeError: Cannot set properties of undefined (setting 'exports')","service":"user-service","timestamp":"2023-07-25T14:32:45.416Z"}
-{"level":"info","message":"before passport.use","service":"user-service","timestamp":"2023-07-25T14:37:28.715Z"}
-{"level":"info","message":"dev","service":"user-service","timestamp":"2023-07-25T14:37:28.721Z"}
-{"level":"info","message":"Server started on port 5000","service":"user-service","timestamp":"2023-07-25T14:37:28.745Z"}
-{"level":"info","message":"MongoDB Connected ","service":"user-service","timestamp":"2023-07-25T14:37:28.763Z"}
-{"level":"info","message":"before passport.use","service":"user-service","timestamp":"2023-07-25T14:37:32.410Z"}
-{"level":"info","message":"dev","service":"user-service","timestamp":"2023-07-25T14:37:32.417Z"}
-{"level":"info","message":"Server started on port 5000","service":"user-service","timestamp":"2023-07-25T14:37:32.437Z"}
-{"level":"info","message":"MongoDB Connected ","service":"user-service","timestamp":"2023-07-25T14:37:32.452Z"}
-{"level":"info","message":"before passport.use","service":"user-service","timestamp":"2023-07-25T14:38:42.358Z"}
-{"level":"info","message":"dev","service":"user-service","timestamp":"2023-07-25T14:38:42.365Z"}
-{"level":"info","message":"Server started on port 5000","service":"user-service","timestamp":"2023-07-25T14:38:42.386Z"}
-{"level":"info","message":"MongoDB Connected ","service":"user-service","timestamp":"2023-07-25T14:38:42.400Z"}
-info: before passport.use
-info: dev
-info: Server started on port 5000
-info: MongoDB Connected 
-info: before passport.use
-info: dev
-info: Server started on port 5000
-info: MongoDB Connected 
-info: before passport.use
-info: dev
-info: Server started on port 5000
-info: MongoDB Connected 
-{"level":"info","message":"before passport.use","timestamp":"2023-07-25T14:55:54.158Z"}
-{"level":"info","message":"dev","timestamp":"2023-07-25T14:55:54.165Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2023-07-25T14:55:54.188Z"}
-{"level":"info","message":"MongoDB Connected ","timestamp":"2023-07-25T14:55:54.204Z"}
-{"level":"info","message":"before passport.use","timestamp":"2023-07-25T14:57:39.656Z"}
-{"level":"info","message":"dev","timestamp":"2023-07-25T14:57:39.665Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2023-07-25T14:57:39.685Z"}
-{"level":"info","message":"MongoDB Connected ","timestamp":"2023-07-25T14:57:39.706Z"}
-{"level":"info","message":"before passport.use","timestamp":"2023-07-25T14:58:12.629Z"}
-{"level":"info","message":"dev","timestamp":"2023-07-25T14:58:12.635Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2023-07-25T14:58:12.653Z"}
-{"level":"info","message":"MongoDB Connected ","timestamp":"2023-07-25T14:58:12.666Z"}
-{"level":"info","message":"before passport.use","service":"user-service","timestamp":"2023-07-25T14:59:03.081Z"}
-{"level":"info","message":"dev","service":"user-service","timestamp":"2023-07-25T14:59:03.087Z"}
-{"level":"info","message":"Server started on port 5000","service":"user-service","timestamp":"2023-07-25T14:59:03.112Z"}
-{"level":"info","message":"MongoDB Connected ","service":"user-service","timestamp":"2023-07-25T14:59:03.131Z"}
-{"level":"info","message":"before passport.use","service":"user-service","timestamp":"2023-07-25T14:59:07.333Z"}
-{"level":"info","message":"dev","service":"user-service","timestamp":"2023-07-25T14:59:07.339Z"}
-{"level":"info","message":"Server started on port 5000","service":"user-service","timestamp":"2023-07-25T14:59:07.358Z"}
-{"level":"info","message":"MongoDB Connected ","service":"user-service","timestamp":"2023-07-25T14:59:07.373Z"}
-{"level":"info","message":"before passport.use","service":"user-service","timestamp":"2023-07-25T14:59:47.444Z"}
-{"level":"info","message":"dev","service":"user-service","timestamp":"2023-07-25T14:59:47.450Z"}
-{"level":"info","message":"Server started on port 5000","service":"user-service","timestamp":"2023-07-25T14:59:47.469Z"}
-{"level":"info","message":"MongoDB Connected ","service":"user-service","timestamp":"2023-07-25T14:59:47.482Z"}
-{"level":"info","message":"before passport.use","timestamp":"2023-07-25T14:59:58.131Z"}
-{"level":"info","message":"dev","timestamp":"2023-07-25T14:59:58.138Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2023-07-25T14:59:58.161Z"}
-{"level":"info","message":"MongoDB Connected ","timestamp":"2023-07-25T14:59:58.176Z"}
-{"level":"info","message":"before passport.use","timestamp":"2023-07-25T15:00:11.767Z"}
-{"level":"info","message":"dev","timestamp":"2023-07-25T15:00:11.773Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2023-07-25T15:00:11.793Z"}
-{"level":"info","message":"MongoDB Connected ","timestamp":"2023-07-25T15:00:11.809Z"}
-{"level":"info","message":"before passport.use","timestamp":"2023-07-25T15:00:21.485Z"}
-{"level":"info","message":"dev","timestamp":"2023-07-25T15:00:21.491Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2023-07-25T15:00:21.512Z"}
-{"level":"info","message":"MongoDB Connected ","timestamp":"2023-07-25T15:00:21.528Z"}
-info: before passport.use {"timestamp":"2023-07-25T15:00:44.324Z"}
-info: dev {"timestamp":"2023-07-25T15:00:44.330Z"}
-info: Server started on port 5000 {"timestamp":"2023-07-25T15:00:44.350Z"}
-info: MongoDB Connected  {"timestamp":"2023-07-25T15:00:44.365Z"}
-error: Caught exception: TypeError: Cannot read properties of undefined (reading 'info') {"timestamp":"2023-07-25T15:02:52.501Z"}
-info: before passport.use {"timestamp":"2023-07-25T15:03:24.340Z"}
-info: dev {"timestamp":"2023-07-25T15:03:24.346Z"}
-info: Server started on port 5000 {"timestamp":"2023-07-25T15:03:24.367Z"}
-info: MongoDB Connected  {"timestamp":"2023-07-25T15:03:24.383Z"}
-{"level":"info","message":"before passport.use","timestamp":"2023-07-25T15:04:10.287Z"}
-{"level":"info","message":"dev","timestamp":"2023-07-25T15:04:10.294Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2023-07-25T15:04:10.313Z"}
-{"level":"info","message":"MongoDB Connected ","timestamp":"2023-07-25T15:04:10.328Z"}
+{"level":"info","message":"before passport.use","timestamp":"2023-07-25T15:11:57.793Z"}
+{"level":"error","message":"Caught exception: TypeError: Cannot read properties of undefined (reading 'info')","timestamp":"2023-07-25T15:11:57.801Z"}
+{"level":"info","message":"before passport.use","timestamp":"2023-07-25T15:12:05.272Z"}
+{"level":"info","message":"dev","timestamp":"2023-07-25T15:12:05.280Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2023-07-25T15:12:05.304Z"}
+{"level":"info","message":"MongoDB Connected ","timestamp":"2023-07-25T15:12:05.360Z"}
+{"level":"info","message":"before passport.use","timestamp":"2023-07-25T15:12:59.629Z"}
+{"level":"info","message":"dev","timestamp":"2023-07-25T15:12:59.636Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2023-07-25T15:12:59.657Z"}
+{"level":"info","message":"MongoDB Connected ","timestamp":"2023-07-25T15:12:59.674Z"}
+{"level":"info","message":"before passport.use","timestamp":"2023-07-25T15:13:12.637Z"}
+{"level":"error","message":"Caught exception: TypeError: Cannot read properties of undefined (reading 'info')","timestamp":"2023-07-25T15:13:12.643Z"}
+{"level":"info","message":"before passport.use","timestamp":"2023-07-25T15:13:40.276Z"}
+{"level":"error","message":"Caught exception: TypeError: Cannot read properties of undefined (reading 'info')","timestamp":"2023-07-25T15:13:40.282Z"}
+{"level":"info","message":"before passport.use","timestamp":"2023-07-25T15:13:55.641Z"}
+{"level":"error","message":"Caught exception: TypeError: Cannot read properties of undefined (reading 'info')","timestamp":"2023-07-25T15:13:55.647Z"}
+{"level":"info","message":"before passport.use","timestamp":"2023-07-25T15:14:02.872Z"}
+{"level":"error","message":"Caught exception: TypeError: Cannot read properties of undefined (reading 'info')","timestamp":"2023-07-25T15:14:02.879Z"}

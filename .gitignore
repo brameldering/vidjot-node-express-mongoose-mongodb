@@ -2,3 +2,5 @@ node_modules
 
 mongo-db-data
 mongo-db-log
+
+*.log

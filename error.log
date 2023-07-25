@@ -1,28 +1,5 @@
-{"level":"error","message":"Caught exception: TypeError: Cannot read properties of undefined (reading 'module')","service":"user-service","timestamp":"2023-07-25T14:15:54.443Z"}
-{"level":"error","message":"Caught exception: TypeError: Cannot set properties of undefined (setting 'exports')","service":"user-service","timestamp":"2023-07-25T14:16:10.868Z"}
-{
-  message: "Caught exception: TypeError: Cannot set properties of undefined (setting 'exports')",
-  level: 'error',
-  service: 'user-service',
-  timestamp: '2023-07-25T14:22:28.637Z'
-}
-{
-  message: "Caught exception: TypeError: Cannot set properties of undefined (setting 'exports')",
-  level: 'error',
-  service: 'user-service',
-  timestamp: '2023-07-25T14:22:41.126Z'
-}
-{
-  message: "Caught exception: TypeError: Cannot set properties of undefined (setting 'exports')",
-  level: 'error',
-  service: 'user-service',
-  timestamp: '2023-07-25T14:29:10.825Z'
-}
-{
-  message: "Caught exception: TypeError: Cannot set properties of undefined (setting 'exports')",
-  level: 'error',
-  service: 'user-service',
-  timestamp: '2023-07-25T14:31:04.314Z'
-}
-{"level":"error","message":"Caught exception: TypeError: Cannot set properties of undefined (setting 'exports')","service":"user-service","timestamp":"2023-07-25T14:32:45.416Z"}
-error: Caught exception: TypeError: Cannot read properties of undefined (reading 'info') {"timestamp":"2023-07-25T15:02:52.501Z"}
+{"level":"error","message":"Caught exception: TypeError: Cannot read properties of undefined (reading 'info')","timestamp":"2023-07-25T15:11:57.801Z"}
+{"level":"error","message":"Caught exception: TypeError: Cannot read properties of undefined (reading 'info')","timestamp":"2023-07-25T15:13:12.643Z"}
+{"level":"error","message":"Caught exception: TypeError: Cannot read properties of undefined (reading 'info')","timestamp":"2023-07-25T15:13:40.282Z"}
+{"level":"error","message":"Caught exception: TypeError: Cannot read properties of undefined (reading 'info')","timestamp":"2023-07-25T15:13:55.647Z"}
+{"level":"error","message":"Caught exception: TypeError: Cannot read properties of undefined (reading 'info')","timestamp":"2023-07-25T15:14:02.879Z"}
