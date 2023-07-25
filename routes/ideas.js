@@ -3,11 +3,14 @@ const router = express.Router();
 const bodyParser = require("body-parser");
 const IdeaModel = require("../models/Idea.js");
 
+// Import authentication check
+const { ensureAuthenticated } = require("../helpers/auth.js");
+
 // create application/x-www-form-urlencoded parser
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 // Render Ideas list form
-router.get("/", (req, res) => {
+router.get("/", ensureAuthenticated, (req, res) => {
   IdeaModel.find({})
     .sort({ date: "desc" })
     .then((ideas) => {
@@ -26,12 +29,12 @@ router.get("/", (req, res) => {
 });
 
 // Render Add Idea form
-router.get("/add", (req, res) => {
+router.get("/add", ensureAuthenticated, (req, res) => {
   res.render("ideas/add");
 });
 
 // Render Edit Idea form
-router.get("/edit/:id", (req, res) => {
+router.get("/edit/:id", ensureAuthenticated, (req, res) => {
   IdeaModel.findOne({ _id: req.params.id }).then((elem) => {
     let idea2 = {
       id: elem.id,
@@ -46,7 +49,7 @@ router.get("/edit/:id", (req, res) => {
 });
 
 // Post idea and redirect to Ideas
-router.post("/", urlencodedParser, (req, res) => {
+router.post("/", [urlencodedParser, ensureAuthenticated], (req, res) => {
   let errors = [];
   const title = req.body.title;
   const details = req.body.details;
@@ -79,7 +82,7 @@ router.post("/", urlencodedParser, (req, res) => {
 });
 
 // Update (PUT) Idea and redirect to Ideas
-router.put("/:id", urlencodedParser, (req, res) => {
+router.put("/:id", [urlencodedParser, ensureAuthenticated], (req, res) => {
   IdeaModel.findOne({
     _id: req.params.id,
   }).then((elem) => {
@@ -102,7 +105,7 @@ router.put("/:id", urlencodedParser, (req, res) => {
 });
 
 // Delete Idea and redirect to Ideas
-router.delete("/:id", urlencodedParser, (req, res) => {
+router.delete("/:id", [urlencodedParser, ensureAuthenticated], (req, res) => {
   IdeaModel.deleteOne({
     _id: req.params.id,
   })
