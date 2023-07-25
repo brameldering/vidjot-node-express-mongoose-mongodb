@@ -3,7 +3,10 @@ const bcrypt = require("bcryptjs");
 // Load user model
 const UserModel = require("../models/User.js");
 
+const logger = require("../helpers/logger.js");
+
 module.exports = function (passport) {
+  logger.info("before passport.use");
   passport.use(
     new LocalStrategy({ usernameField: "email" }, (email, password, done) => {
       // Find user

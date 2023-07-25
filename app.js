@@ -7,6 +7,12 @@ const flash = require("connect-flash");
 const session = require("express-session");
 const passport = require("passport");
 
+// Initialize logger
+const logger = require("./helpers/logger");
+// process.on("uncaughtException", function (err) {
+//   logger.error("Caught exception: " + err);
+// });
+
 const app = express();
 
 // Load routes
@@ -21,9 +27,9 @@ const { mongoURI } = require("./config/database");
 mongoose
   .connect(mongoURI)
   .then(() => {
-    console.log("MongoDB Connected ");
+    logger.info("MongoDB Connected ");
   })
-  .catch((err) => console.log(err));
+  .catch((err) => logger.error(err));
 
 app.engine("handlebars", engine());
 app.set("view engine", "handlebars");
@@ -77,5 +83,5 @@ app.use("/users", users);
 // Start server
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
-  console.log(`Server started on port ${port}`);
+  logger.info(`Server started on port ${port}`);
 });

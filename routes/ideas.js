@@ -3,6 +3,8 @@ const router = express.Router();
 const bodyParser = require("body-parser");
 const IdeaModel = require("../models/Idea.js");
 
+const logger = require("../helpers/logger.js");
+
 // Import authentication check
 const { ensureAuthenticated } = require("../helpers/auth.js");
 
@@ -11,11 +13,13 @@ const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 // Render Ideas list form
 router.get("/", ensureAuthenticated, (req, res) => {
+  logger.info("get ideas");
   // Only retrieve ideas that belong to user
   IdeaModel.find({ user: req.user.email })
     .sort({ date: "desc" })
     .then((ideas) => {
       let ideas2 = ideas.map((elem) => {
+        logger.info("title: ", elem.title);
         return {
           id: elem.id,
           title: elem.title,

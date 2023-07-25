@@ -1,0 +1,75 @@
+{"level":"info","message":"before passport.use","service":"user-service"}
+{"level":"info","message":"dev","service":"user-service"}
+{"level":"info","message":"Server started on port 5000","service":"user-service"}
+{"level":"info","message":"MongoDB Connected ","service":"user-service"}
+{"level":"info","message":"before passport.use","service":"user-service"}
+{"level":"info","message":"dev","service":"user-service"}
+{"level":"info","message":"Server started on port 5000","service":"user-service"}
+{"level":"info","message":"MongoDB Connected ","service":"user-service"}
+{"level":"info","message":"before passport.use","service":"user-service"}
+{"level":"info","message":"dev","service":"user-service"}
+{"level":"info","message":"Server started on port 5000","service":"user-service"}
+{"level":"info","message":"MongoDB Connected ","service":"user-service"}
+{"level":"info","message":"before passport.use","service":"user-service"}
+{"level":"info","message":"dev","service":"user-service"}
+{"level":"info","message":"Server started on port 5000","service":"user-service"}
+{"level":"info","message":"MongoDB Connected ","service":"user-service"}
+{"level":"info","message":"before passport.use","service":"user-service"}
+{"level":"info","message":"dev","service":"user-service"}
+{"level":"info","message":"Server started on port 5000","service":"user-service"}
+{"level":"info","message":"MongoDB Connected ","service":"user-service"}
+{"level":"info","message":"before passport.use","service":"user-service"}
+{"level":"info","message":"dev","service":"user-service"}
+{"level":"info","message":"Server started on port 5000","service":"user-service"}
+{"level":"info","message":"MongoDB Connected ","service":"user-service"}
+{"level":"info","message":"before passport.use","service":"user-service","timestamp":"2023-07-25T14:14:40.168Z"}
+{"level":"info","message":"dev","service":"user-service","timestamp":"2023-07-25T14:14:40.174Z"}
+{"level":"info","message":"Server started on port 5000","service":"user-service","timestamp":"2023-07-25T14:14:40.194Z"}
+{"level":"info","message":"MongoDB Connected ","service":"user-service","timestamp":"2023-07-25T14:14:40.208Z"}
+{"level":"info","message":"before passport.use","service":"user-service","timestamp":"2023-07-25T14:14:41.574Z"}
+{"level":"info","message":"dev","service":"user-service","timestamp":"2023-07-25T14:14:41.580Z"}
+{"level":"info","message":"Server started on port 5000","service":"user-service","timestamp":"2023-07-25T14:14:41.597Z"}
+{"level":"info","message":"MongoDB Connected ","service":"user-service","timestamp":"2023-07-25T14:14:41.610Z"}
+{"level":"info","message":"before passport.use","service":"user-service","timestamp":"2023-07-25T14:15:29.773Z"}
+{"level":"info","message":"dev","service":"user-service","timestamp":"2023-07-25T14:15:29.780Z"}
+{"level":"info","message":"Server started on port 5000","service":"user-service","timestamp":"2023-07-25T14:15:29.799Z"}
+{"level":"info","message":"MongoDB Connected ","service":"user-service","timestamp":"2023-07-25T14:15:29.813Z"}
+{"level":"error","message":"Caught exception: TypeError: Cannot read properties of undefined (reading 'module')","service":"user-service","timestamp":"2023-07-25T14:15:54.443Z"}
+{"level":"error","message":"Caught exception: TypeError: Cannot set properties of undefined (setting 'exports')","service":"user-service","timestamp":"2023-07-25T14:16:10.868Z"}
+{
+  message: "Caught exception: TypeError: Cannot set properties of undefined (setting 'exports')",
+  level: 'error',
+  service: 'user-service',
+  timestamp: '2023-07-25T14:22:28.637Z'
+}
+{
+  message: "Caught exception: TypeError: Cannot set properties of undefined (setting 'exports')",
+  level: 'error',
+  service: 'user-service',
+  timestamp: '2023-07-25T14:22:41.126Z'
+}
+{
+  message: "Caught exception: TypeError: Cannot set properties of undefined (setting 'exports')",
+  level: 'error',
+  service: 'user-service',
+  timestamp: '2023-07-25T14:29:10.825Z'
+}
+{
+  message: "Caught exception: TypeError: Cannot set properties of undefined (setting 'exports')",
+  level: 'error',
+  service: 'user-service',
+  timestamp: '2023-07-25T14:31:04.314Z'
+}
+{"level":"error","message":"Caught exception: TypeError: Cannot set properties of undefined (setting 'exports')","service":"user-service","timestamp":"2023-07-25T14:32:45.416Z"}
+{"level":"info","message":"before passport.use","service":"user-service","timestamp":"2023-07-25T14:37:28.715Z"}
+{"level":"info","message":"dev","service":"user-service","timestamp":"2023-07-25T14:37:28.721Z"}
+{"level":"info","message":"Server started on port 5000","service":"user-service","timestamp":"2023-07-25T14:37:28.745Z"}
+{"level":"info","message":"MongoDB Connected ","service":"user-service","timestamp":"2023-07-25T14:37:28.763Z"}
+{"level":"info","message":"before passport.use","service":"user-service","timestamp":"2023-07-25T14:37:32.410Z"}
+{"level":"info","message":"dev","service":"user-service","timestamp":"2023-07-25T14:37:32.417Z"}
+{"level":"info","message":"Server started on port 5000","service":"user-service","timestamp":"2023-07-25T14:37:32.437Z"}
+{"level":"info","message":"MongoDB Connected ","service":"user-service","timestamp":"2023-07-25T14:37:32.452Z"}
+{"level":"info","message":"before passport.use","service":"user-service","timestamp":"2023-07-25T14:38:42.358Z"}
+{"level":"info","message":"dev","service":"user-service","timestamp":"2023-07-25T14:38:42.365Z"}
+{"level":"info","message":"Server started on port 5000","service":"user-service","timestamp":"2023-07-25T14:38:42.386Z"}
+{"level":"info","message":"MongoDB Connected ","service":"user-service","timestamp":"2023-07-25T14:38:42.400Z"}

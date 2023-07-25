@@ -5,6 +5,8 @@ const UserModel = require("../models/User.js");
 const bcrypt = require("bcryptjs");
 const passport = require("passport");
 
+const logger = require("../helpers/logger.js");
+
 // create application/x-www-form-urlencoded parser
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
@@ -67,6 +69,7 @@ router.post("/register", urlencodedParser, (req, res) => {
       passwordConfirm: passwordConfirm,
     });
   } else {
+    logger.info("About to register");
     // Field validation successfull
     const newUser = {
       name: name,
@@ -120,6 +123,7 @@ router.post("/login", urlencodedParser, (req, res, next) => {
       password: password,
     });
   } else {
+    logger.info("about to login");
     // Authenticate using passport local strategy
     // console.log("before authenticate, email: " + email);
     passport.authenticate("local", {
