@@ -121,7 +121,7 @@ router.post("/login", urlencodedParser, (req, res, next) => {
     });
   } else {
     // Authenticate using passport local strategy
-    console.log("before authenticate, email: " + email);
+    // console.log("before authenticate, email: " + email);
     passport.authenticate("local", {
       successRedirect: "/ideas",
       failureRedirect: "/users/login",

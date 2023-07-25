@@ -11,7 +11,8 @@ const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 // Render Ideas list form
 router.get("/", ensureAuthenticated, (req, res) => {
-  IdeaModel.find({})
+  // Only retrieve ideas that belong to user
+  IdeaModel.find({ user: req.user.email })
     .sort({ date: "desc" })
     .then((ideas) => {
       let ideas2 = ideas.map((elem) => {
@@ -40,11 +41,17 @@ router.get("/edit/:id", ensureAuthenticated, (req, res) => {
       id: elem.id,
       title: elem.title,
       details: elem.details,
+      user: elem.user,
       date: elem.date,
     };
-    res.render("ideas/edit", {
-      idea: idea2,
-    });
+    if (idea2.user !== req.user.email) {
+      req.flash("error_msg", "Not authorized");
+      res.redirect("/ideas");
+    } else {
+      res.render("ideas/edit", {
+        idea: idea2,
+      });
+    }
   });
 });
 
@@ -53,6 +60,7 @@ router.post("/", [urlencodedParser, ensureAuthenticated], (req, res) => {
   let errors = [];
   const title = req.body.title;
   const details = req.body.details;
+  const user = req.user.email;
   if (title.trim().length === 0) {
     errors.push({ text: "Title must have a value" });
   }
@@ -65,6 +73,7 @@ router.post("/", [urlencodedParser, ensureAuthenticated], (req, res) => {
     const newIdea = {
       title: title,
       details: details,
+      user: user,
     };
     new IdeaModel(newIdea)
       .save()
@@ -86,21 +95,27 @@ router.put("/:id", [urlencodedParser, ensureAuthenticated], (req, res) => {
   IdeaModel.findOne({
     _id: req.params.id,
   }).then((elem) => {
-    // new values
-    elem.title = req.body.title;
-    elem.details = req.body.details;
-    elem
-      .save()
-      .then(() => {
-        req.flash("success_msg", "Idea has been updated");
-      })
-      .catch((err) => {
-        console.log(err);
-        errors.push({ text: `Error updating idea in database` });
-      })
-      .finally(() => {
-        res.redirect("/ideas");
-      });
+    if (elem.user !== req.user.email) {
+      req.flash("error_msg", "Not authorized");
+      res.redirect("/ideas");
+    } else {
+      // new values
+      elem.title = req.body.title;
+      elem.details = req.body.details;
+      elem.user = req.user.email;
+      elem
+        .save()
+        .then(() => {
+          req.flash("success_msg", "Idea has been updated");
+        })
+        .catch((err) => {
+          console.log(err);
+          errors.push({ text: `Error updating idea in database` });
+        })
+        .finally(() => {
+          res.redirect("/ideas");
+        });
+    }
   });
 });
 
@@ -108,6 +123,7 @@ router.put("/:id", [urlencodedParser, ensureAuthenticated], (req, res) => {
 router.delete("/:id", [urlencodedParser, ensureAuthenticated], (req, res) => {
   IdeaModel.deleteOne({
     _id: req.params.id,
+    user: req.user.email,
   })
     .then(() => {
       req.flash("success_msg", "Idea has been deleted");
