@@ -16,8 +16,13 @@ const users = require("./routes/users");
 // Passport config
 require("./config/passport.js")(passport);
 
-// Connect to mongoose
-const dbURI = `mongodb://127.0.0.1:27017/vidjot-dev`;
+// Connect to local DB
+// const dbURI = `mongodb://127.0.0.1:27017/vidjot-dev`;
+
+// Connect to Mongo Atlas
+require("dotenv").config();
+const dbURI = `mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@bram-test-mongodb.koftlqn.mongodb.net/ideas-log-db?retryWrites=true&w=majority`;
+
 mongoose
   .connect(dbURI)
   .then(() => {
