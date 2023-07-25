@@ -16,3 +16,9 @@
 {"level":"error","message":"Caught exception: TypeError: Cannot read properties of undefined (reading 'info')","timestamp":"2023-07-25T15:13:55.647Z"}
 {"level":"info","message":"before passport.use","timestamp":"2023-07-25T15:14:02.872Z"}
 {"level":"error","message":"Caught exception: TypeError: Cannot read properties of undefined (reading 'info')","timestamp":"2023-07-25T15:14:02.879Z"}
+{"level":"info","message":"before passport.use","timestamp":"2023-07-25T15:48:11.884Z"}
+{"level":"error","message":"Caught exception: TypeError: Cannot read properties of undefined (reading 'info')","timestamp":"2023-07-25T15:48:11.891Z"}
+{"level":"info","message":"before passport.use","timestamp":"2023-07-25T15:48:29.035Z"}
+{"level":"info","message":"prod","timestamp":"2023-07-25T15:48:29.041Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2023-07-25T15:48:29.060Z"}
+{"level":"info","message":"MongoDB Connected ","timestamp":"2023-07-25T15:48:29.678Z"}
