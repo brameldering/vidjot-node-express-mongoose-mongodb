@@ -3,7 +3,7 @@ const { createLogger, format, transports } = require("winston");
 const logger = createLogger({
   level: "info",
   format: format.combine(format.timestamp(), format.json()),
-  defaultMeta: { service: "user-service" },
+  defaultMeta: {}, // service: "user-service"
   transports: [
     //
     // - Write all logs with importance level of `error` or less to `error.log`
@@ -21,7 +21,7 @@ const logger = createLogger({
 if (process.env.NODE_ENV !== "production") {
   logger.add(
     new transports.Console({
-      format: format.simple(),
+      format: format.combine(format.timestamp(), format.json()),
     })
   );
 }

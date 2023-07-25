@@ -9,9 +9,9 @@ const passport = require("passport");
 
 // Initialize logger
 const logger = require("./helpers/logger");
-// process.on("uncaughtException", function (err) {
-//   logger.error("Caught exception: " + err);
-// });
+process.on("uncaughtException", function (err) {
+  logger.error("Caught exception: " + err);
+});
 
 const app = express();
 

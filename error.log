@@ -25,3 +25,4 @@
   timestamp: '2023-07-25T14:31:04.314Z'
 }
 {"level":"error","message":"Caught exception: TypeError: Cannot set properties of undefined (setting 'exports')","service":"user-service","timestamp":"2023-07-25T14:32:45.416Z"}
+error: Caught exception: TypeError: Cannot read properties of undefined (reading 'info') {"timestamp":"2023-07-25T15:02:52.501Z"}
