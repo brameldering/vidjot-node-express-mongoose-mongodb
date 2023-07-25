@@ -16,15 +16,10 @@ const users = require("./routes/users");
 // Passport config
 require("./config/passport.js")(passport);
 
-// Connect to local DB
-// const dbURI = `mongodb://127.0.0.1:27017/vidjot-dev`;
-
-// Connect to Mongo Atlas
-require("dotenv").config();
-const dbURI = `mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@bram-test-mongodb.koftlqn.mongodb.net/ideas-log-db?retryWrites=true&w=majority`;
+const { mongoURI } = require("./config/database");
 
 mongoose
-  .connect(dbURI)
+  .connect(mongoURI)
   .then(() => {
     console.log("MongoDB Connected ");
   })
@@ -80,7 +75,7 @@ app.use("/ideas", ideas);
 app.use("/users", users);
 
 // Start server
-const port = 5000;
+const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`Server started on port ${port}`);
 });
